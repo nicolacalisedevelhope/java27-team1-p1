@@ -25,7 +25,7 @@ public class Main {
             //Invoco il metodo per chiedere all'utente se vuole continuare a svolgere operazioni o uscire
             acceso = continuaUtilizzo(scanner , acceso);
         }
-    scanner.close();
+        scanner.close();
     }
 
     /**
@@ -36,23 +36,23 @@ public class Main {
     public static void riconosciOperazione(String operazione, Scanner sc) {
         switch (operazione){
             case "+":
-                //float risultatoSomma = somma(sc);
-                //System.out.println("Il risultato è " + risultatoSomma);
+                float risultatoSomma = somma(sc);
+                System.out.println("Il risultato è " + risultatoSomma);
                 break;
             case "-":
-               // sottrazione();
+                // sottrazione();
                 break;
             case "*":
-               // moltiplicazione();
+                // moltiplicazione();
                 break;
             case "/":
-               // divisiione();
+                // divisiione();
                 break;
             case "%":
-               // controlloPari();
+                // controlloPari();
                 break;
             case "^":
-               // potenza();
+                // potenza();
                 break;
             default:
                 System.out.println("Carattere non riconosciuto!");
@@ -76,4 +76,13 @@ public class Main {
         }
         return interruttore;
     }
+
+    public static float somma( Scanner scan){
+        System.out.println("Inserisci il primo numero: ");
+        float num1 = scan.nextFloat();
+        System.out.println("Inserisci il secondo numero: ");
+        float num2 = scan.nextFloat();
+        return num1 + num2;
+    }
+
 }
