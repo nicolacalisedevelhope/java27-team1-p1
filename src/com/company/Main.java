@@ -76,4 +76,14 @@ public class Main {
         }
         return interruttore;
     }
+    public static boolean controlloPari(Scanner sc){
+        System.out.println ("Inserisci il numero da controllare");
+        float num = sc.nextFloat();
+        if(num % 2 == 0){
+            return  true;
+        } else {
+            return false;
+        }
+
+    }
 }
