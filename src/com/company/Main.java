@@ -52,7 +52,7 @@ public class Main {
                // controlloPari();
                 break;
             case "^":
-               // potenza();
+                //potenza();
                 break;
             default:
                 System.out.println("Carattere non riconosciuto!");
@@ -75,5 +75,17 @@ public class Main {
             interruttore = false;
         }
         return interruttore;
+    }
+    public static float potenza(Scanner sc){
+        System.out.println ("inserisci base");
+        float base = sc.nextFloat();
+        System.out.println ("inserisci esponente");
+        int esponente = sc.nextInt();
+        float risultato = base;
+
+        for(int i = 1; i < esponente; i++){
+            risultato = risultato * base;
+        }
+        return risultato;
     }
 }
