@@ -94,4 +94,16 @@ public class Main {
         return num1 - num2;
     }
 
+
+
+    public static float divisione( Scanner scan ){
+        System.out.println("Inserisci il primo numero: ");
+        float num1 = scan.nextFloat();
+        System.out.println("Inserisci il secondo numero: ");
+        float num2 = scan.nextFloat();
+        if(num2 != 0){
+            return num1 / num2;
+        }else return 0;
+    }
+
 }
