@@ -1,6 +1,8 @@
 package com.company;
 import java.util.Scanner;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -52,7 +54,7 @@ public class Main {
                // controlloPari();
                 break;
             case "^":
-                //potenza();
+               // potenza();
                 break;
             default:
                 System.out.println("Carattere non riconosciuto!");
@@ -75,6 +77,14 @@ public class Main {
             interruttore = false;
         }
         return interruttore;
+
+    }
+    public static float sottrazione( Scanner scan){
+        System.out.println("Inserisci il primo numero: ");
+        float num1 = scan.nextFloat();
+        System.out.println("Inserisci il secondo numero: ");
+        float num2 = scan.nextFloat();
+        return num1 - num2;
     }
     public static float potenza(Scanner sc){
         System.out.println ("inserisci base");
@@ -88,4 +98,29 @@ public class Main {
         }
         return risultato;
     }
+
+
+
+
+    public static float divisione( Scanner scan ){
+
+        System.out.println("Inserisci il primo numero: ");
+        float num1 = scan.nextFloat();
+        System.out.println("Inserisci il secondo numero: ");
+        float num2 = scan.nextFloat();
+          if(num2 != 0){
+            return num1 / num2;
+        }else return 0;
+}
+
+      public static float moltiplicazione( Scanner scan){
+        System.out.println("Inserisci il primo numero: ");
+        float num1 = scan.nextFloat();
+        System.out.println("Inserisci il secondo numero: ");
+        float num2 = scan.nextFloat();
+        return num1 * num2;
+
+
+    }
+
 }
