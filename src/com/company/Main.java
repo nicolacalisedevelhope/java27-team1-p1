@@ -1,18 +1,9 @@
 package com.company;
 import java.util.Scanner;
 
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
-
-
-
-
-
-
-
         //Dichiaro e istazio lo Scanner
         Scanner scanner = new Scanner(System.in);
 
@@ -93,6 +84,16 @@ public class Main {
         float num2 = scan.nextFloat();
         return num1 - num2;
     }
+    public static boolean controlloPari(Scanner sc){
+        System.out.println ("Inserisci il numero da controllare");
+        float num = sc.nextFloat();
+        if(num % 2 == 0){
+            return  true;
+        } else {
+            return false;
+        }
+
+    }
 
 
 
@@ -107,7 +108,7 @@ public class Main {
             return num1 / num2;
         }else return 0;
 }
-  
+
       public static float moltiplicazione( Scanner scan){
         System.out.println("Inserisci il primo numero: ");
         float num1 = scan.nextFloat();
@@ -115,7 +116,6 @@ public class Main {
         float num2 = scan.nextFloat();
         return num1 * num2;
 
-      
-    }
 
+    }
 }
