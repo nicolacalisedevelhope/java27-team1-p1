@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -85,6 +83,7 @@ public class Main {
         float num2 = scan.nextFloat();
         return num1 - num2;
     }
+
     public static float potenza(Scanner sc){
         System.out.println ("inserisci base");
         float base = sc.nextFloat();
@@ -96,6 +95,17 @@ public class Main {
             risultato = risultato * base;
         }
         return risultato;
+
+    public static boolean controlloPari(Scanner sc){
+        System.out.println ("Inserisci il numero da controllare");
+        float num = sc.nextFloat();
+        if(num % 2 == 0){
+            return  true;
+        } else {
+            return false;
+        }
+
+
     }
 
 
@@ -119,7 +129,7 @@ public class Main {
         float num2 = scan.nextFloat();
         return num1 * num2;
 
+  }
 
-    }
-
+    
 }
